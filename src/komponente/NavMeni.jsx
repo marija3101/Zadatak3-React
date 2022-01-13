@@ -107,18 +107,12 @@ const NavMeni = ({
             <input
               className="form-control me-2"
               type="search"
-              placeholder="Search"
+              placeholder="Pretražite proizvode!"
               aria-label="Search"
               onChange={(e) =>
                 setInput(e.target.value)
               }
             />
-            <button
-              className="btn btn-outline-success"
-              type="submit"
-            >
-              Pretražite
-            </button>
           </form>
         </div>
       </div>
