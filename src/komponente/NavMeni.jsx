@@ -3,7 +3,11 @@ import { BiLaptop } from "react-icons/bi";
 import { BsCart4 } from "react-icons/bs";
 import { Link } from "react-router-dom";
 
-const NavMeni = ({ cartNum }) => {
+const NavMeni = ({
+  cartNum,
+  setInput,
+  setSort,
+}) => {
   return (
     <nav
       className="navbar navbar-expand-lg navbar-light shadow stick-top"
@@ -105,6 +109,9 @@ const NavMeni = ({ cartNum }) => {
               type="search"
               placeholder="Search"
               aria-label="Search"
+              onChange={(e) =>
+                setInput(e.target.value)
+              }
             />
             <button
               className="btn btn-outline-success"
